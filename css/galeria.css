@@ -1,0 +1,134 @@
+/*
+
+*/
+
+.galeria_cala_kontr {
+    display: none;
+}
+
+.galeria_cala_kontr h1 {
+    color: white;
+    font-size: 60px;
+}
+
+.galeria_ramka_zdj {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(147, 139, 139);
+    height: 750px;
+    top: 80px;
+    left: 50px;
+    right: 50px;
+    bottom: 120px;
+    z-index: 1;
+}
+
+.galeria_przyc_zamknij {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 80px;
+    z-index: 2;
+}
+
+.galeria_przyc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    background-color: black;
+    z-index: 2;
+}
+
+.galeria_przyc:hover {
+    background-color: white;
+}
+
+.galeria_przyc:hover h1 {
+    color: red;
+}
+
+.galeria_przyc_dalej {
+    position: fixed;
+    top: 400px;
+    right: 0;
+    height: 200px;
+}
+
+.galeria_przyc_wstecz {
+    position: fixed;
+    top: 400px;
+    left: 0;
+    height: 200px;
+}
+
+
+.galeria_ramka_kliszy {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    height: 120px;
+    width: 100%;
+    z-index: 2;
+}
+
+.galeria_kafelka {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    padding: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.galeria_kafelka:hover {
+    background: var(--kolor_przez);
+}
+
+
+/*
+Kafelki do  wyborze koloru szablonu.
+*/
+
+.kafelka_koloru {
+    width: 80px;
+    height: 80px;
+
+}
+
+#kolor_1 {
+    background-color: black;
+}
+
+#kolor_2 {
+    background-color: red;
+}
+
+#kolor_3 {
+    background-color: blue;
+}
+
+#kolor_4 {
+    background-color: green;
+}
+
+#kolor_5 {
+    background-color: yellow;
+}
+
+#kolor_6 {
+    background-color: white;
+}

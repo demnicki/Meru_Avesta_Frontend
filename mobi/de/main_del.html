@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="http://127.0.0.1:5500/Frontend/pics/favicon.ico">
+    <link rel="stylesheet" href="http://127.0.0.1:5500/Frontend/css/ramki.css">
+    <link rel="stylesheet" href="http://127.0.0.1:5500/Frontend/css/czat.css">
+    <link rel="stylesheet" href="http://127.0.0.1:5500/Frontend/css/galeria.css">
+    <link rel="stylesheet" href="http://127.0.0.1:5500/Frontend/css/komunik.css">
+    <link rel="stylesheet" href="http://127.0.0.1:5500/Frontend/css/menu.css">
+    <title>Portal Meru Avesta</title>
+    <meta name="description" content="Portal Meru Avesta.">
+    <meta name="keywords" content="Meru, Avesta, Darknet, Meru Avesta">
+</head>
+
+<body>
+    <!-- Tło do całej strony. -->
+    <div class="tlo"></div>
+    <!-- Tester do menu. -->
+    <div class="konst_menu">
+        <div class="przezroczystosc ramka_menu">
+            <div class="pozycja_menu">
+                <p>Portal Meru Avesta</p>
+            </div>
+            <div class="pozycja_menu">
+                <p>Twoje konto</p>
+            </div>
+            <div class="pozycja_menu">
+                <p>Saldo rachunku: 0.0000045 BTC</p>
+            </div>
+            <div class="pozycja_menu koszyk ostatnia_pozycja">
+                <p>&#128722;</p>
+            </div>
+        </div>
+    </div>
+    <!-- Ikonki do mediów społeczościowyh. -->
+    <div class="konst_social">
+        <div class="ramka_social" onmouseover="pokaz_social()" onmouseout="ukryj_social()">
+            <img src="http://127.0.0.1:5500/Frontend/pics/insta.png" width="50px" height="50px">
+            <h1 id="tekst_social">Instagram.</h1>
+        </div>
+    </div>
+    <!-- Tester do podmenu. -->
+    <div class="konst_podmenu" id="podmenu">
+        <div class="przezroczystosc ramka_podmenu">
+            <div class="zamknij_podmenu">
+                <p><a href="javascript:zamknij_podmenu()">&#x2716;</a></p>
+            </div>
+            <div id="tr_podmenu">
+                <div class="pozycja_podmenu" onclick="">
+                    <p>Podmenu 1</p>
+                </div>
+                <div class="pozycja_podmenu">
+                    <p>Podmenu 2</p>
+                </div>
+                <div class="pozycja_podmenu ostatnia_pozycja">
+                    <p>Podmenu 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Koniec. -->
+    <!-- Lista plików JS. -->
+    <script src="http://127.0.0.1:5500/Frontend/js/rozruch.js"></script>
+    <script src="http://127.0.0.1:5500/Frontend/js/menu.js"></script>
+    <script src="http://127.0.0.1:5500/Frontend/js/czat.js"></script>
+    <script src="http://127.0.0.1:5500/Frontend/js/finanse.js"></script>
+    <script src="http://127.0.0.1:5500/Frontend/js/galeria.js"></script>
+    <script src="http://127.0.0.1:5500/Frontend/js/koszyk.js"></script>
+</body>
+
+</html>

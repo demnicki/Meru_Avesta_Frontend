@@ -1,0 +1,49 @@
+<div class="konst_centrum">
+    <div class="przezroczystosc ramka_rejestr">
+        <div class="pola_tekst ramka_pionowa">
+            <div class="ramka_tekst">
+                <p id="tekst_kom">Wypełnij formularz zgodnie z instrukcją!</p>
+            </div>
+
+            <table class="rejestr2">
+                <tr>
+                    <td><input class="pola_tekst pole_nieaktywne" type="text" id="p1"
+                            value="Nazwa promotora: &#8222;ArcyKsiąże Ciemniści&#8221;" readonly></td>
+                    <td><input class="pola_tekst" type="text" id="p2" placeholder="Twoje 6-cyfrowe ID" onblur="wal_id()" required></td>
+                </tr>
+                <tr>
+                    <td><input class="pola_tekst" type="password" id="p3" placeholder="Nadaj hasło do konta" onblur="wal_hasla()" required>
+                    </td>
+                    <td><input class="pola_tekst" type="password" id="p4" placeholder="Powtórz hasło do konta" onblur="wal_hasla()" required>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <select class="pola_tekst" id="p5" form="carform" onblur="wal_jezyk()" required>
+                            <option class="pola_tekst" disabled selected hidden>Wybierz swój preferowany język:</option>
+                            <option class="pola_tekst" value="en">English</option>
+                            <option class="pola_tekst" value="pl">Polish</option>
+                            <option class="pola_tekst" value="de">German</option>
+                            <option class="pola_tekst" value="ru">Russian</option>
+                        </select>
+                    </td>
+                    <td><input class="pola_tekst" type="text" id="p6" placeholder="Opcjonalnie - Twój adres e-mail"  onblur="wal_maila()">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea class="pola_tekst" id="p7"
+                            placeholder="Twój publiczny pseudonim. - Widoczny przez innych użytkowników." onblur="wal_pseudo()"
+                            required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button class="przycisk" onclick="rejestr_etap3()">Przejdź dalej</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

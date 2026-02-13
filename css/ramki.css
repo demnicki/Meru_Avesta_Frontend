@@ -1,0 +1,264 @@
+/*
+
+    maksymalna wysokość: 910px;
+    maksymalna szerokość: 1840px;
+    Środkowa szerokość: 610px;
+
+*/
+
+:root {
+    --kolor_przez: rgba(255, 255, 255, 0.2);
+    --kolor_tla_przycisk: white;
+    --kolor_tekstu_przycisk: black;
+}
+body {
+
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.pola_tekst {
+    color: black;
+}
+
+.pola_tekst input[type="text"],
+input[type="password"] {
+    border-radius: 30px;
+
+    height: 30px;
+    width: 350px;
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+.pola_tekst textarea {
+    border-radius: 30px;
+    min-height: 60px;
+    width: 800px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.pola_tekst select {
+    border-radius: 30px;
+    height: 50px;
+    width: 350px;
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+.przycisk {
+    background-color: var(--kolor_tla_przycisk);
+    color: var(--kolor_tekstu_przycisk);
+    border-radius: 30px;
+    height: 50px;
+    width: 370px;
+    font-size: 20px;
+}
+
+/*
+Obsługa tła witryny.
+*/
+
+.siatka_kafelek_tla {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin-top: 10px;
+}
+
+.kafelka_tla {
+    border-radius: 30px;
+    padding: 30px;
+
+}
+
+.kafelka_tla:hover {
+    background:var(--kolor_przez);
+}
+
+.tlo {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("/pics/tla/tlo_1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.przezroczystosc {
+    background: var(--kolor_przez);
+    color: white;
+}
+
+/*
+
+*/
+.konst_centrum {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ramka_centrum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 20px 20px;
+}
+
+.konst_log1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: auto;
+}
+
+.konst_log2 {
+    position: fixed;
+    top: 25%;
+    left: 620px;
+}
+
+.konst_rejestr {
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+}
+
+.konst_pelnej_tr {}
+
+.ramka_pelnej_tr {}
+
+.ramka_pionowa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ramka_pozioma {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+
+
+.ramka_tekst {
+    width: 90%;
+    background-color: white;
+    color: black;
+    border: dotted 2px rgb(100, 22, 22);
+    padding: 0px 10px;
+}
+
+.pole_nieaktywne {
+    background-color: gray;
+    color: white;
+}
+
+.pole_bledne {
+    border-color: darkred;
+    background-color: lightcoral;
+    color: black;
+}
+
+
+/*
+Ekrany logowania się.
+*/
+.blok_hasla {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.pozycja_hasla {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+}
+
+.pola_hasla input[type="password"] {
+    border-radius: 30px;
+    height: 30px;
+    width: 10px;
+    padding: 10px;
+}
+
+/*
+Ekrany rejestrowania nowego konta.
+*/
+
+.ramka_rejestr {
+    border-radius: 50px;
+    width: 800px;
+    padding: 20px 20px;
+}
+
+.rejestr_blok {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.siatka_avatarow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.avatar {
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.avatar:hover {
+    background: var(--kolor_przez);
+}
+
+.nowy_avatar input[type="file"] {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    height: 50px;
+    width: 370px;
+    font-size: 20px;
+}
+
+#rejestr_dalej {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#wybrany_avatar {
+    display: none;
+}

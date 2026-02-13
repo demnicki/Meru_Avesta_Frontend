@@ -1,0 +1,26 @@
+{
+    "anon": {
+        "tab_podmenu": [
+            "Zaloguj mnie",
+            "Zarejestruj mnie",
+            "Galeria"
+        ],
+        "tab_funk_js": [
+            "log_etap1()",
+            "rejestr_etap1()",
+            "galeria()"
+        ]
+    },
+    "zal": {
+        "tab_podmenu": [
+            "Ustawienia",
+            "Moje zamówienia",
+            "Moje magazyny"
+        ],
+        "tab_funk_js": [
+            "dodaj_produkt(1)",
+            "dodaj_produkt(1)",
+            "dodaj_produkt(1)"
+        ]
+    }
+}

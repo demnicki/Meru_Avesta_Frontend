@@ -1,0 +1,41 @@
+/*
+
+*/
+
+#saldo_eur {
+    width: 140px;
+    background: rgba(28, 7, 7, 0.2);
+    border-radius: 30px;
+}
+
+#saldo_eur a {
+    color: white;
+    text-decoration: none;
+}
+
+#saldo_eur:hover a {
+    text-decoration: underline overline;
+}
+
+.rejestr2 table,
+table * {
+    width: 500px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.login2 table,
+table * {
+    width: fit-content;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.login2 tr {
+    height: 10px;
+}
+
+.login2 td {
+    width: 50px;
+}

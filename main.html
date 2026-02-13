@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="./pics/favicon.ico">
+    <link rel="stylesheet" href="./css/ramki.css">
+    <link rel="stylesheet" href="./css/czat.css">
+    <link rel="stylesheet" href="./css/galeria.css">
+    <link rel="stylesheet" href="./css/komunik.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/tabele.css">
+    <title>Portal Meru Avesta</title>
+    <meta name="description" content="Portal Meru Avesta.">
+    <meta name="keywords" content="Meru, Avesta, Darknet, Meru Avesta">
+</head>
+
+<body onload="start_strony()">
+    <!-- Tło do całej strony. -->
+    <div class="tlo"></div>
+    <!-- Tester do menu. -->
+    <div class="konst_menu">
+        <div id="tu_menu"></div>
+    </div>
+    <!-- Ikonki do mediów społeczościowyh. -->
+    <div class="konst_social" onmouseover="pokaz_social()">
+        <div class="ramka_social" id="tr_social">
+            <img src="./pics/insta.png" width="50px" height="50px">
+        </div>
+        <div class="ramka_social_aktyw" id="tr_social_aktyw">
+            <a href="http://instagram.com" target="_blank"> <img src="./pics/insta.png" width="50px" height="50px"></a>
+            <h1><a href="http://instagram.com" target="_blank">Instagram!</a></h1>
+        </div>
+    </div>
+    <!-- Tester do podmenu. -->
+    <div class="konst_podmenu" id="podmenu">
+        <div class="przezroczystosc ramka_podmenu">
+            <div class="zamknij_podmenu">
+                <p><a href="javascript:zamknij_podmenu()">&#x2716;</a></p>
+            </div>
+            <div id="tr_podmenu">
+                <!-- Tutaj treść podmenu z funkcji JS. -->
+            </div>
+        </div>
+    </div>
+    <div id="tu_main">
+        <!-- Tutaj treść główna z funkcji JS. -->
+        <div class="konst_centrum">
+            <div class="przezroczystosc ramka_rejestr">
+                <div class="pola_tekst ramka_pionowa">
+
+                    <div class="ramka_pionowa" id="kafelki_tla">
+                        <div class="ramka_tekst">
+                            <p>Wybierz tło całej witryny.</p>
+                        </div>
+                        <div class="siatka_kafelek_tla">
+                            <div class="kafelka_tla" onclick="zmien_tlo(1)"><img src="./pics/tla/tlo_1.jpg"
+                                    width="200px" height="200px">
+                            </div>
+                            <div class="kafelka_tla" onclick="zmien_tlo(2)"><img src="./pics/tla/tlo_2.jpg"
+                                    width="200px" height="200px">
+                            </div>
+                            <div class="kafelka_tla" onclick="zmien_tlo(2)"><img src="./pics/tla/tlo_2.jpg"
+                                    width="200px" height="200px">
+                            </div>
+                        </div>
+                        <div class="siatka_kafelek_tla">
+                            <div class="kafelka_tla" onclick="zmien_tlo(3)"><img src="./pics/tla/tlo_3.jpg"
+                                    width="200px" height="200px">
+                            </div>
+                            <div class="kafelka_tla" onclick="zmien_tlo(4)"><img src="./pics/tla/tlo_4.jpg"
+                                    width="200px" height="200px">
+                            </div>
+                            <div class="kafelka_tla" onclick="zmien_tlo(4)"><img src="./pics/tla/tlo_4.jpg"
+                                    width="200px" height="200px">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <button class="przycisk" onclick="zal_podstrone('kolor')">Wybierz kolor</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="galeria_cala_kontr" id="galeria">
+        <div class="galeria_przyc galeria_przyc_zamknij" onclick="zamknij_galerie()">
+            <h1>&#x2716;</h1>
+        </div>
+
+        <div class="galeria_ramka_zdj ramka_pozioma">
+            <img id="galeria_zdj" src="./pics/tla/tlo_1.jpg" width="500px" height="500px">
+        </div>
+
+        <div class="galeria_przyc galeria_przyc_dalej" onclick="nast_zdj()">
+            <h1>></h1>
+        </div>
+        <div class="galeria_przyc galeria_przyc_wstecz" onclick="popr_zdj()">
+            <h1>
+                << /h1>
+        </div>
+        <div class="galeria_ramka_kliszy">
+            <div class="galeria_kafelka" onclick="galeria('./pics/tla/tlo_1.jpg')"><img src="./pics/tla/tlo_1.jpg"
+                    width="100px" height="100px"></div>
+            <div class="galeria_kafelka" onclick="galeria('./pics/tla/tlo_2.jpg')"><img src="./pics/tla/tlo_2.jpg"
+                    width="100px" height="100px"></div>
+            <div class="galeria_kafelka" onclick="galeria('./pics/tla/tlo_3.jpg')"><img src="./pics/tla/tlo_3.jpg"
+                    width="100px" height="100px"></div>
+            <div class="galeria_kafelka" onclick="galeria('./pics/tla/tlo_4.jpg')"><img src="./pics/tla/tlo_4.jpg"
+                    width="100px" height="100px"></div>
+        </div>
+    </div>
+
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/walidacja.js"></script>
+    <script src="./js/czat.js"></script>
+    <script src="./js/finanse.js"></script>
+    <script src="./js/galeria.js"></script>
+    <script src="./js/koszyk.js"></script>
+    <script src="./js/sesja.js"></script>
+    <script src="./js/rozruch.js"></script>
+</body>
+
+</html>

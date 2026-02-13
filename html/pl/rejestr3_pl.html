@@ -1,0 +1,53 @@
+<div class="konst_centrum">
+    <div class="przezroczystosc ramka_rejestr">
+        <div class="pola_tekst ramka_pionowa">
+
+            <div class="ramka_pionowa" id="wyb_avatar">
+                <div class="ramka_tekst">
+                    <p>Wybierz swój avatar!</p>
+                </div>
+                <div class="siatka_avatarow">
+                    <div class="avatar" onclick="wyb_dom_avatara(7)"><img src="/Frontend/pics/avatary/7.png"
+                            width="100px" height="100px"></div>
+                    <div class="avatar" onclick="wyb_dom_avatara(8)"><img src="/Frontend/pics/avatary/8.png"
+                            width="100px" height="100px"></div>
+                    <div class="avatar" onclick="wyb_dom_avatara(11)"><img src="/Frontend/pics/avatary/11.png"
+                            width="100px" height="100px"></div>
+                    <div class="avatar" onclick="wyb_dom_avatara(12)"><img src="/Frontend/pics/avatary/12.png"
+                            width="100px" height="100px"></div>
+                </div>
+                <div class="siatka_avatarow">
+                    <div class="avatar" onclick="wyb_dom_avatara(15)"><img src="/Frontend/pics/avatary/15.png"
+                            width="100px" height="100px"></div>
+                    <div class="avatar" onclick="wyb_dom_avatara(14)"><img src="/Frontend/pics/avatary/14.png"
+                            width="100px" height="100px"></div>
+                    <div class="avatar" onclick="wyb_dom_avatara(13)"><img src="/Frontend/pics/avatary/13.png"
+                            width="100px" height="100px"></div>
+                    <div class="avatar" onclick="wyb_dom_avatara(16)"><img src="/Frontend/pics/avatary/16.png"
+                            width="100px" height="100px"></div>
+                </div>
+                <div class="ramka_tekst" style="margin-bottom: 10px;">
+                    <p>Bezpieczniej będzie jak załączysz swój własny avatar. Rozmiar pliku nie może być większy niż 50
+                        MB.</p>
+                </div>
+                <div class="nowy_avatar">
+                    <input class="nowy_avatar" id="nowy_avatar" type="file" onchange="zal_avatar()"
+                        accept="image/png, image/gif, image/jpeg" />
+                </div>
+            </div>
+            <div id="rejestr_dalej">
+                <button class="przycisk" onclick="rejestr_etap3()">Utwórz konto</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="wybrany_avatar">
+    <div class="ramka_pozioma">
+        <div class="ramka_tekst" style="margin-right: 10px; height: fit-content;">
+            <p>Tak będzie wyglądać Twój avatar. Utwórz konto!</p>
+        </div>
+        <div class="avatar">
+            <img id="av_obraz" src="" width="300px" height="300px">
+        </div>
+    </div>
+</div>
