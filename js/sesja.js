@@ -4,7 +4,7 @@
 
 var sesja = {
     jezyk: '', token: 'fhtU63', id_promo: 0, czy_zalogowany: false,
-    uzyt: { id_uzyt: 0, dl_hasla: 0, tlo: 1, kolor: 1,saldo_eur: 0.01, status: '', tr_wiad_n: [], tr_wiad_st: [] },
+    uzyt: { id_uzyt: 0, dl_hasla: null, tlo: null, kolor: null, saldo_eur: 0.01, status: '', tr_wiad_n: [], tr_wiad_st: [] },
     tr_koszyka: []
 };
 
@@ -17,12 +17,25 @@ function ust_jezyk() {
     };
 };
 
-function start_sesji() {
+async function start_sesji() {
     if (localStorage.getItem('sesja') !== null) {
         sesja = JSON.parse(localStorage.getItem('sesja'));
+        if (sesja.czy_zalogowany) {
+            await zal_menu_z();
+            pokaz_saldo_eur();
+            wiad();
+        } else {
+            await zal_menu_a();
+        };
+        if (!isNaN(sesja.uzyt.tlo) && !isNaN(sesja.uzyt.kolor)) {
+            zmien_kolor(sesja.uzyt.kolor);
+            zmien_tlo(sesja.uzyt.tlo);
+        };
+        zal_podstrone('manifest');
     } else {
         ust_jezyk();
         localStorage.setItem('sesja', JSON.stringify(sesja));
+        zal_podstrone('tlo');
     };
 };
 

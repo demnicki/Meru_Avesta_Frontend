@@ -43,6 +43,8 @@ function zmien_kolor(nr) {
 
 function zmien_tlo(nr) {
     document.querySelector(".tlo").style.backgroundImage = 'url("/pics/tla/tlo_' + nr + '.jpg")';
+    sesja.uzyt.tlo = nr;
+    localStorage.setItem('sesja', JSON.stringify(sesja));
     switch (nr) {
         case 1:
             zmien_kolor(6);

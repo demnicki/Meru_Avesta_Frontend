@@ -29,18 +29,10 @@ async function start_strony() {
     id_url = '';
   }
   start_sesji();
-  if (sesja.czy_zalogowany) {
-    await zal_menu_z();
-    pokaz_saldo_eur();
-    wiad();
-  } else {
-    await zal_menu_a();
-  };
-  koszyk();
+   koszyk();
   document.documentElement.setAttribute('lang', sesja.jezyk);
   document.title = document.title + ' - ' + sesja.jezyk.toUpperCase();
-  zmien_kolor(sesja.uzyt.kolor);
-  if (id_url.length == 8) {
+    if (id_url.length == 8) {
     pokaz_komunikat('To pokój czatu. ID: ' + id_url);
   }
   else if (id_url.length == 6) {
